@@ -46,9 +46,9 @@ latest-stable.json
 以下からダウンロードしてください。
 
 【最新版】
-[ KurokoCast 0.1.0-beta.0 をダウンロード](https://github.com/kuroko-cast/KurokoCast-updates/releases/download/v0.1.0-beta.0/KurokoCast-0.1.0-beta.0-Setup.exe)
+[KurokoCast 0.1.0-beta.0 をダウンロード](https://github.com/kuroko-cast/KurokoCast-updates/releases/download/v0.1.0-beta.0/KurokoCast-0.1.0-beta.0-Setup.exe)
 
-【過去バージョン】
+[過去バージョン一覧](https://github.com/kuroko-cast/KurokoCast-updates/releases)
 
 
 インストーラーをダウンロード後、`KurokoCast-0.1.0-beta.0-Setup.exe` を実行してください。
