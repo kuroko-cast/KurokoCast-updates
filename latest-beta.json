@@ -1,8 +1,8 @@
 {
 "latest_version": "0.1.0-beta.0",
 "channel": "beta",
-"installer_url": "https://github.com/kuroko-cast/KurokoCast-updates/releases/download/v0.1.0-beta.0/KurokoCast-0.1.0-beta.0-Setup.exe",
-"sha256": "FAA0FAC4155A43141066CAD27330DAE8D3D9C97FB4A86D90D94EE0C1EC7230FF",
-"release_notes": "KurokoCast プレプレテスト版を公開しました。OCR翻訳、音声字幕、サポートZIP作成に対応しています。",
+"installer_url": "https://github.com/kuroko-cast/KurokoCast-updates/releases/download/v0.1.0-beta.1/KurokoCast-0.1.0-beta.1-Setup.exe",
+"sha256": "44A82B5FD2F74376F946AEAF41F187EB884EFA0D57383C6A035EDCAB1C8D97CA",
+"release_notes": "初期設定のデスクトップ音声字幕デザインで、保持秒数と1行文字数の初期値が逆になっていた問題を修正しました。",
 "required": false
 }
