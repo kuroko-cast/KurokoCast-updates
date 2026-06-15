@@ -1,8 +1,8 @@
 {
-"latest_version": "0.1.0-beta.1",
+"latest_version": "0.1.0-beta.2",
 "channel": "beta",
-"installer_url": "https://github.com/kuroko-cast/KurokoCast-updates/releases/download/v0.1.0-beta.1/KurokoCast-0.1.0-beta.1-Setup.exe",
-"sha256": "44A82B5FD2F74376F946AEAF41F187EB884EFA0D57383C6A035EDCAB1C8D97CA",
-"release_notes": "初期設定のデスクトップ音声字幕デザインで、保持秒数と1行文字数の初期値が逆になっていた問題を修正しました。",
+"installer_url": "https://github.com/kuroko-cast/KurokoCast-updates/releases/download/v0.1.0-beta.2/KurokoCast-0.1.0-beta.2-Setup.exe",
+"sha256": "FFCB7E3EF76C7FA8E902755490F1A28BA48D60C9DED5CE42EFEE9FC9D7AEBC31",
+"release_notes": "半自動アップデート機能を追加しました。更新確認後にインストーラーを自動ダウンロードし、SHA256検証後にインストーラーを起動できます。",
 "required": false
 }
