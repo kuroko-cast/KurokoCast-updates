@@ -41,15 +41,20 @@ latest-beta.json
 latest-stable.json
 ```
 
-## インストーラー配布
+## ダウンロード
 
-インストーラーは GitHub Releases にアップロードします。
+最新版のプレプレテスト版は、以下からダウンロードできます。
 
-例：
+[ KurokoCast 0.1.0-beta.0 をダウンロード](https://github.com/kuroko-cast/KurokoCast-updates/releases/download/v0.1.0-beta.0/KurokoCast-0.1.0-beta.0-Setup.exe)
 
-```text
-KurokoCast-0.1.0-beta.0-Setup.exe
-```
+インストーラーをダウンロード後、`KurokoCast-0.1.0-beta.0-Setup.exe` を実行してください。
+
+## 注意事項
+
+* Windows用のテスト版です。
+* 初回起動時に Windows Defender や SmartScreen の確認が出る場合があります。
+* 不具合が発生した場合は、アプリ内のサポートZIPを作成して共有してください。
+
 
 `.exe` ファイルをこのリポジトリに直接コミットしないでください。
 
