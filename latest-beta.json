@@ -1,8 +1,8 @@
 {
 "latest_version": "0.1.0-beta.0",
 "channel": "beta",
-"installer_url": "",
-"sha256": "",
+"installer_url": "https://github.com/kuroko-cast/KurokoCast-updates/releases/download/v0.1.0-beta.0/KurokoCast-0.1.0-beta.0-Setup.exe",
+"sha256": "FAA0FAC4155A43141066CAD27330DAE8D3D9C97FB4A86D90D94EE0C1EC7230FF",
 "release_notes": "KurokoCast プレプレテスト版の初期配布準備中です。",
 "required": false
 }
