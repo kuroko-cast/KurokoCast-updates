@@ -52,7 +52,7 @@ latest-stable.json
 [バージョン一覧](https://github.com/kuroko-cast/KurokoCast-updates/releases)
 
 
-インストーラーをダウンロード後、`KurokoCast-0.1.0-beta.0-Setup.exe` を実行してください。
+インストーラーをダウンロード後、`KurokoCast-x.x.x-beta.x-Setup.exe` を実行してください。
 
 ## 注意事項
 
