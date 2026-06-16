@@ -1,8 +1,8 @@
 {
-"latest_version": "0.1.0-beta.3",
+"latest_version": "0.1.0-beta.4",
 "channel": "beta",
-"installer_url": "https://github.com/kuroko-cast/KurokoCast-updates/releases/download/v0.1.0-beta.3/KurokoCast-0.1.0-beta.3-Setup.exe",
-"sha256": "D1994E3EB0A3D4A17C3C3CCB93F8203671B01FFF1A27DA8ECE5C486A927EBB62",
-"release_notes": "匿名の起動イベント送信機能を追加しました。また、半自動アップデート時にインストーラーが起動せずKurokoCastだけが終了する場合がある問題を修正しました。字幕本文、OCR本文、翻訳本文、音声、スクリーンショット、APIキー、個人情報は送信しません。",
+"installer_url": "https://github.com/kuroko-cast/KurokoCast-updates/releases/download/v0.1.0-beta.4/KurokoCast-0.1.0-beta.4-Setup.exe",
+"sha256": "FC6060C86B608C45F0A80DF357AA94B7E2796A14FCA8C0DDEF5633F45F41DA54",
+"release_notes": "起動時のアップデート確認処理を見直し、プレプレテスト中の更新に気づきやすくしました。あわせて、アップデート確認・OCR翻訳・音声字幕・サポートZIPまわりの安定性を改善しました。",
 "required": false
 }
