@@ -1,8 +1,8 @@
 {
-"latest_version": "0.1.0-beta.4",
+"latest_version": "0.1.0-beta.5",
 "channel": "beta",
-"installer_url": "https://github.com/kuroko-cast/KurokoCast-updates/releases/download/v0.1.0-beta.4/KurokoCast-0.1.0-beta.4-Setup.exe",
-"sha256": "FC6060C86B608C45F0A80DF357AA94B7E2796A14FCA8C0DDEF5633F45F41DA54",
-"release_notes": "起動時のアップデート確認処理を見直し、プレプレテスト中の更新に気づきやすくしました。あわせて、アップデート確認・OCR翻訳・音声字幕・サポートZIPまわりの安定性を改善しました。",
+"installer_url": "https://github.com/kuroko-cast/KurokoCast-updates/releases/download/v0.1.0-beta.5/KurokoCast-0.1.0-beta.5-Setup.exe",
+"sha256": "7E50C41183DBE1A66EE7D33684535D4D55235EF441FB73ADD818704C66F6653C",
+"release_notes": "全体設定画面の表示・保存まわりを修正し、プライバシー設定の一部項目が正しく操作できない問題を修正しました。あわせて、起動時の設定反映処理を改善しました。",
 "required": false
 }
