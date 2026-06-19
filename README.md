@@ -46,7 +46,7 @@ latest-stable.json
 以下からダウンロードしてください。
 
 【最新版】
-[KurokoCast 0.1.0-beta.7 をダウンロード](https://github.com/kuroko-cast/KurokoCast-updates/releases/download/v0.1.0-beta.7/KurokoCast-0.1.0-beta.7-Setup.exe)
+[KurokoCast 0.1.0-beta.7.1 をダウンロード](https://github.com/kuroko-cast/KurokoCast-updates/releases/download/v0.1.0-beta.7.1/KurokoCast-0.1.0-beta.7.1-Setup.exe)
 
 【過去バージョンはこちら】
 [バージョン一覧](https://github.com/kuroko-cast/KurokoCast-updates/releases)
