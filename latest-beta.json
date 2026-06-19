@@ -2,7 +2,7 @@
 "latest_version": "0.1.0-beta.7",
 "channel": "beta",
 "installer_url": "https://github.com/kuroko-cast/KurokoCast-updates/releases/download/v0.1.0-beta.7/KurokoCast-0.1.0-beta.7-Setup.exe",
-"sha256": "3eb4d3a3fed2271735c19f4eda9ff9b6f5e9033c4c8335e3fa047c1e4312a9d1",
+"sha256": "3EB4D3A3FED2271735C19F4EDA9FF9B6F5E9033C4C8335E3FA047C1E4312A9D1",
 "release_notes": "v0.1.0-beta.7\n\n・新規インストール時の標準音声認識モデルを medium に変更しました。\n・文字起こし精度の向上を目指した調整を行いました。\n・既存ユーザーのモデル設定は上書きされないようにしています。\n・内部処理と安定性を改善しました。"",
 "required": false
 }
