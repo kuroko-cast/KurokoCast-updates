@@ -1,8 +1,8 @@
 {
-"latest_version": "0.1.0-beta.7",
+"latest_version": "0.1.0-beta.7.1",
 "channel": "beta",
-"installer_url": "https://github.com/kuroko-cast/KurokoCast-updates/releases/download/v0.1.0-beta.7/KurokoCast-0.1.0-beta.7-Setup.exe",
-"sha256": "3eb4d3a3fed2271735c19f4eda9ff9b6f5e9033c4c8335e3fa047c1e4312a9d1",
-"release_notes": "v0.1.0-beta.7\n\n・新規インストール時の標準音声認識モデルを medium に変更しました。\n・文字起こし精度の向上を目指した調整を行いました。\n・既存ユーザーのモデル設定は上書きされないようにしています。\n・内部処理と安定性を改善しました。",
+"installer_url": "https://github.com/kuroko-cast/KurokoCast-updates/releases/download/v0.1.0-beta.7.1/KurokoCast-0.1.0-beta.7.1-Setup.exe",
+"sha256": "sha256:7c366207838f006ba61e10f32fc75e6ba1b6a82c9d03f9e9597ea1220a62bd6c",
+"release_notes": "v0.1.0-beta.7.1\n・一部環境でGPU文字起こしがCPU実行に切り替わってしまう問題を修正しました。\n・packaged版に必要なCUDA runtime DLLを同梱しました。\n・GPU実行失敗時の診断ログとサポート情報を改善しました。\n・v0.1.0-beta.7.1 のアップデート判定を修正しました。",
 "required": false
 }
