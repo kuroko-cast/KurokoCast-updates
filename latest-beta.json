@@ -1,8 +1,8 @@
 {
-"latest_version": "0.1.0-beta.6",
+"latest_version": "0.1.0-beta.7",
 "channel": "beta",
-"installer_url": "https://github.com/kuroko-cast/KurokoCast-updates/releases/download/v0.1.0-beta.6/KurokoCast-0.1.0-beta.6-Setup.exe",
-"sha256": "B3FDF4420FFC88B424266A1C50461B3C00F76D4B3145B59805867B96D64038F4",
-"release_notes": "無音時・ノイズ時の誤字幕を抑えるため、音声認識前後の判定処理を改善しました。あわせて、字幕表示までの待ち時間改善、マイク字幕設定の初期値修正、GPU負荷調査用ログの追加を行いました。",
+"installer_url": "https://github.com/kuroko-cast/KurokoCast-updates/releases/download/v0.1.0-beta.7/KurokoCast-0.1.0-beta.7-Setup.exe",
+"sha256": "sha256:3eb4d3a3fed2271735c19f4eda9ff9b6f5e9033c4c8335e3fa047c1e4312a9d1",
+"release_notes": "KurokoCast v0.1.0-beta.7\n\n主な変更:\n・新規/初期設定の音声認識モデルを medium に変更し、文字起こし精度の向上を図りました。\n・既存ユーザーが明示的に選んでいるモデル設定は上書きしない方針です。\n・large-v3 はGPU負荷が高いため、標準常用モデルにはしていません。今後は高精度補正用として検討します。\n・雑音、通知音、BGMなどを判定するための detector path v2 / dual-path の内部基盤を追加しました。標準ではまだOFFです。\n・GPU負荷や処理時間の検証・解析を強化しました。\n\n今後の予定:\n・雑音や通知音の除外精度をさらに改善\n・怪しい文字起こしだけを高精度モデルで補正する仕組みの検討\n・速度優先 / 精度優先を分かりやすく切り替える設定の追加\n・配信やOBS向けの字幕表示改善\n\nまだベータ版のため、文字起こし精度や動作の重さ、不具合などがあればフィードバックをお願いします。",
 "required": false
 }
