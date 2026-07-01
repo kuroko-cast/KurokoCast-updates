@@ -1,8 +1,87 @@
 {
-"latest_version": "0.1.0-beta.8",
-"channel": "beta",
-"installer_url": "https://github.com/kuroko-cast/KurokoCast-updates/releases/download/v0.1.0-beta.8/KurokoCast.0.1.0-beta.8.exe",
-"sha256": "4ff72522c2d92f3ea0b8165d0409d49cc027aacd4626feb70f352a4ac13e8096",
-"release_notes": "v0.1.0-beta.8\n・音声認識バランス 0〜100 スライダー追加\n・詳細ASR設定を通常画面から非表示化\n・短文字幕callbackの安定性改善\n・BGM/chord pad系の誤字幕抑制\n・RTX 4070 / 12GB想定のGPU safety profile追加\n・GPU高負荷 / VRAM不足時の安全制御追加\n・ASR routing / large-v3 shadow基盤追加\n・ASR model / routing / API候補のanalytics metrics追加\n・large-v3 default OFF維持\n・final text replacement未実装\n・認識本文・音声データ・ファイルパスをanalytics送信しない",
-"required": false
+  "version": "0.1.0-beta.9",
+  "latest_version": "0.1.0-beta.9",
+  "channel": "beta",
+  "installer_url": "https://github.com/kuroko-cast/KurokoCast-updates/releases/download/v0.1.0-beta.9/KurokoCast.0.1.0-beta.9.exe",
+  "sha256": "189B1DAE4FDC24D6B114DBDAABA052D615985FDD26336118E94FB551B3FC2487",
+  "release_notes": "v0.1.0-beta.9\n・Google / Chrome Web Speech API Bridge direct版を追加\n・Chrome側「字幕開始」1ボタン導線を追加\n・デスクトップ音声 / マイク音声のGoogle字幕に対応\n・対応環境ではブラウザ側翻訳を優先し、未対応時はKurokoCast側翻訳へ切り替え\n・Google認識方式の設定UIを整理\n・Browser Bridge通常UIを簡略化\n・サポートZIPにGoogle Bridge診断情報を追加\n・Google認識言語のルーティングを修正\n・Core installerをAI-DLC非同梱の軽量構成へ整理\n・AI-DLC multi-asset導線と軽量status checkを改善",
+  "required": false,
+  "ai_runtime": {
+    "runtime_id": "kurokocast-ai-runtime",
+    "runtime_version": "0.1.0-ai.1",
+    "compatible_app_versions": ">=0.1.0-beta.8,<0.2.0",
+    "required": true,
+    "assets": [
+      {
+        "asset_id": "base-runtime",
+        "pack_id": "base-runtime",
+        "asset_name": "KurokoCast-AI-DLC-base-runtime-0.1.0-ai.1.zip",
+        "url": "https://github.com/kuroko-cast/KurokoCast-updates/releases/download/ai-dlc-v0.1.0-ai.1/KurokoCast-AI-DLC-base-runtime-0.1.0-ai.1.zip",
+        "sha256": "25af71668691575084fc26f601e27b70cf484c0f0e637369edfcd8deb64893cb",
+        "size_bytes": 209055808,
+        "install_order": 10,
+        "required": true
+      },
+      {
+        "asset_id": "asr-basic",
+        "pack_id": "asr-basic-model",
+        "asset_name": "KurokoCast-AI-DLC-asr-basic-0.1.0-ai.1.zip",
+        "url": "https://github.com/kuroko-cast/KurokoCast-updates/releases/download/ai-dlc-v0.1.0-ai.1/KurokoCast-AI-DLC-asr-basic-0.1.0-ai.1.zip",
+        "sha256": "ed34af9fe217d0b58195f32695365c2a717e2e6822773f233cd14579e56032bc",
+        "size_bytes": 649723063,
+        "install_order": 20,
+        "required": true
+      },
+      {
+        "asset_id": "asr-medium",
+        "pack_id": "asr-medium-model",
+        "asset_name": "KurokoCast-AI-DLC-asr-medium-0.1.0-ai.1.zip",
+        "url": "https://github.com/kuroko-cast/KurokoCast-updates/releases/download/ai-dlc-v0.1.0-ai.1/KurokoCast-AI-DLC-asr-medium-0.1.0-ai.1.zip",
+        "sha256": "18d97cec3b221b0607346c29b50a8565fd028b1f2c1a79c37ac0596f9cd2213f",
+        "size_bytes": 1413592556,
+        "install_order": 30,
+        "required": true
+      },
+      {
+        "asset_id": "asr-large-v3-part1",
+        "pack_id": "asr-large-v3-model",
+        "asset_name": "KurokoCast-AI-DLC-asr-large-v3-part1-0.1.0-ai.1.zip",
+        "url": "https://github.com/kuroko-cast/KurokoCast-updates/releases/download/ai-dlc-v0.1.0-ai.1/KurokoCast-AI-DLC-asr-large-v3-part1-0.1.0-ai.1.zip",
+        "sha256": "c50faf2dbf925676493c5aaefc1c6fff666549a4120951efe1961dde7f54dcc9",
+        "size_bytes": 1630,
+        "install_order": 40,
+        "required": true
+      },
+      {
+        "asset_id": "asr-large-v3-part2",
+        "pack_id": "asr-large-v3-model",
+        "asset_name": "KurokoCast-AI-DLC-asr-large-v3-part2-0.1.0-ai.1.zip",
+        "url": "https://github.com/kuroko-cast/KurokoCast-updates/releases/download/ai-dlc-v0.1.0-ai.1/KurokoCast-AI-DLC-asr-large-v3-part2-0.1.0-ai.1.zip",
+        "sha256": "a185fd7d70b38431cf7901b6067006c75a9a21e21cc236d71ec97ab3466da7d2",
+        "size_bytes": 950245201,
+        "install_order": 41,
+        "required": true
+      },
+      {
+        "asset_id": "asr-large-v3-part3",
+        "pack_id": "asr-large-v3-model",
+        "asset_name": "KurokoCast-AI-DLC-asr-large-v3-part3-0.1.0-ai.1.zip",
+        "url": "https://github.com/kuroko-cast/KurokoCast-updates/releases/download/ai-dlc-v0.1.0-ai.1/KurokoCast-AI-DLC-asr-large-v3-part3-0.1.0-ai.1.zip",
+        "sha256": "cb0ffa46271c1708b09a0a64ce3827d13870b2ee08f851d5d0e9f0a59faf41fc",
+        "size_bytes": 950863278,
+        "install_order": 42,
+        "required": true
+      },
+      {
+        "asset_id": "asr-large-v3-part4",
+        "pack_id": "asr-large-v3-model",
+        "asset_name": "KurokoCast-AI-DLC-asr-large-v3-part4-0.1.0-ai.1.zip",
+        "url": "https://github.com/kuroko-cast/KurokoCast-updates/releases/download/ai-dlc-v0.1.0-ai.1/KurokoCast-AI-DLC-asr-large-v3-part4-0.1.0-ai.1.zip",
+        "sha256": "16440c6a5e78f7fdbdc7bf121923a37eeed628dd5c14be80ead53a2f7f23254e",
+        "size_bytes": 950124003,
+        "install_order": 43,
+        "required": true
+      }
+    ]
+  }
 }
