@@ -1,10 +1,10 @@
 {
-  "version": "0.1.0-beta.10-fix1",
-  "latest_version": "0.1.0-beta.10-fix1",
+  "version": "0.1.0-beta.11",
+  "latest_version": "0.1.0-beta.11",
   "channel": "beta",
-  "installer_url": "https://github.com/kuroko-cast/KurokoCast-updates/releases/download/v0.1.0-beta.10-fix1/KurokoCast.0.1.0-beta.10-fix1.exe",
-  "sha256": "4E37C55FB73522ABDC590B15363A590F42F9D9D46404C86EC426FDB3587FE50C",
-  "release_notes": "v0.1.0-beta.10-fix1\n・AI-DLCの大容量ダウンロードが固まって見える問題を改善\n・AI-DLCダウンロードのtimeoutを大容量向けに調整\n・AI-DLC assetをstreaming downloadするよう改善\n・ダウンロード進捗表示を改善\n・asset単位のretryを追加\n・installer中にAI-DLCはダウンロードしない\n・AI-DLCはinstallerに同梱しない",
+  "installer_url": "https://github.com/kuroko-cast/KurokoCast-updates/releases/download/v0.1.0-beta.11/KurokoCast.0.1.0-beta.11.exe",
+  "sha256": "5E116ECF0D67BFCEC2AF36D58A909FFE18C1F613042AF01B68C5510951BEA364",
+  "release_notes": "v0.1.0-beta.11\n・AI-DLCの大容量ダウンロードが固まって見える問題を改善\n・AI-DLCダウンロードのtimeoutを大容量向けに調整\n・AI-DLC assetをstreaming downloadするよう改善\n・ダウンロード進捗表示を改善\n・asset単位のretryを追加\n・installer中にAI-DLCはダウンロードしない\n・AI-DLCはinstallerに同梱しない",
   "required": false,
   "ai_runtime": {
     "runtime_id": "kurokocast-ai-runtime",
