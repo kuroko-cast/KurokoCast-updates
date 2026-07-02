@@ -1,10 +1,10 @@
 {
-  "version": "0.1.0-beta.11",
-  "latest_version": "0.1.0-beta.11",
+  "version": "0.1.0-beta.12",
+  "latest_version": "0.1.0-beta.12",
   "channel": "beta",
-  "installer_url": "https://github.com/kuroko-cast/KurokoCast-updates/releases/download/v0.1.0-beta.11/KurokoCast.0.1.0-beta.11.exe",
-  "sha256": "5E116ECF0D67BFCEC2AF36D58A909FFE18C1F613042AF01B68C5510951BEA364",
-  "release_notes": "v0.1.0-beta.11\n・AI-DLCの大容量ダウンロードが固まって見える問題を改善\n・AI-DLCダウンロードのtimeoutを大容量向けに調整\n・AI-DLC assetをstreaming downloadするよう改善\n・ダウンロード進捗表示を改善\n・asset単位のretryを追加\n・installer中にAI-DLCはダウンロードしない\n・AI-DLCはinstallerに同梱しない",
+  "installer_url": "https://github.com/kuroko-cast/KurokoCast-updates/releases/download/v0.1.0-beta.12/KurokoCast.0.1.0-beta.12.exe",
+  "sha256": "356C0B98D9633CF6D3FA4A6B1C26FD68F4B98180D2C5E94324A5BF7157AF0C91",
+  "release_notes": "# KurokoCast 0.1.0-beta.12\n\n## 主な変更\n\n- AI-DLCの大容量downloadで、途中失敗後に再試行しやすいよう改善しました。\n- download中の `.part` ファイルを保持し、次回再試行で再利用できるようにしました。\n- HTTP Range resumeに対応し、対応環境では途中から再開できるようにしました。\n- Range非対応時はsafe reasonを表示し、最初から再取得するfallbackを行うようにしました。\n- asset単位のretryとsafe reason表示を改善しました。\n- AI-DLC導入失敗後、同じ画面から再試行できるUIを改善しました。\n- support ZIPに `ai_dlc_download_state.json` を追加しました。\n- support ZIPのGPU runtime diagnosticsをsafe summary化し、full path混入を防ぐようにしました。\n- beta.12 release前確認として、full 7asset download / resume / apply / activate smokeが成功しました。\n- support ZIP privacy smokeで、重要payloadの漏えい検出が0件であることを確認しました。\n\n## 注意事項\n\n- AI-DLC本体はinstallerに同梱していません。\n- installer中にAI-DLC本体をdownload / apply / activateしません。\n- AI-DLCはアプリ起動後、ユーザー操作により導入されます。",
   "required": false,
   "ai_runtime": {
     "runtime_id": "kurokocast-ai-runtime",
