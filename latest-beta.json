@@ -1,10 +1,10 @@
 {
-  "version": "0.1.0-beta.12",
-  "latest_version": "0.1.0-beta.12",
+  "version": "0.1.0-beta.13",
+  "latest_version": "0.1.0-beta.13",
   "channel": "beta",
-  "installer_url": "https://github.com/kuroko-cast/KurokoCast-updates/releases/download/v0.1.0-beta.12/KurokoCast.0.1.0-beta.12.exe",
-  "sha256": "356C0B98D9633CF6D3FA4A6B1C26FD68F4B98180D2C5E94324A5BF7157AF0C91",
-  "release_notes": "# KurokoCast 0.1.0-beta.12\n\n## 主な変更\n\n- AI-DLCの大容量downloadで、途中失敗後に再試行しやすいよう改善しました。\n- download中の `.part` ファイルを保持し、次回再試行で再利用できるようにしました。\n- HTTP Range resumeに対応し、対応環境では途中から再開できるようにしました。\n- Range非対応時はsafe reasonを表示し、最初から再取得するfallbackを行うようにしました。\n- asset単位のretryとsafe reason表示を改善しました。\n- AI-DLC導入失敗後、同じ画面から再試行できるUIを改善しました。\n- support ZIPに `ai_dlc_download_state.json` を追加しました。\n- support ZIPのGPU runtime diagnosticsをsafe summary化し、full path混入を防ぐようにしました。\n- beta.12 release前確認として、full 7asset download / resume / apply / activate smokeが成功しました。\n- support ZIP privacy smokeで、重要payloadの漏えい検出が0件であることを確認しました。\n\n## 注意事項\n\n- AI-DLC本体はinstallerに同梱していません。\n- installer中にAI-DLC本体をdownload / apply / activateしません。\n- AI-DLCはアプリ起動後、ユーザー操作により導入されます。",
+  "installer_url": "https://github.com/kuroko-cast/KurokoCast-updates/releases/download/v0.1.0-beta.13/KurokoCast.0.1.0-beta.13.exe",
+  "sha256": "DEDBD66C32970DD4A46F9D7C8B08BBCFBE2D7F82F87240819E789B7C6497C637",
+  "release_notes": "# KurokoCast 0.1.0-beta.13\n\n## 主な変更\n\n- beta.12公開後に確認されたAI-DLC導入失敗の診断を強化しました。\n- beta.13 RC実機テストで見つかった metadata_status=app_version_mismatch を修正しました。\n- AI-DLC metadata validationは、top-level app versionではなく ai_runtime.compatible_app_versions を正本にして互換性を判定します。\n- AI-DLCのdownload完了後に extract_failed となるケースを切り分けやすくしました。\n- Windows LongPathsEnabled=0 環境向けに、AI-DLC展開時のstaging pathを短縮しました。\n- AI-DLC展開前にpath length preflightを行い、path length riskをsafeな数値で記録するようにしました。\n- support ZIPに ai_dlc_install_state.json を含め、download後のextract / activate / status_checkの状態を追いやすくしました。\n- support ZIP同梱logsのpath情報、外部参照、認証情報のマスクを強化しました。\n- download済みasset確認後に失敗した場合のUI文言を、safe reasonに応じて改善しました。\n- RC3でLongPathsEnabled=0のノートPCでもAI-DLC導入成功を確認しました。\n\n## 注意事項\n\n- AI-DLC本体はinstallerに同梱していません。\n- installer中にAI-DLC本体のdownload / apply / activateは行いません。\n- AI-DLCは初回起動後、ユーザーがアプリ内で導入を選んだ場合にdownload / apply / activateします。",
   "required": false,
   "ai_runtime": {
     "runtime_id": "kurokocast-ai-runtime",
@@ -83,5 +83,6 @@
         "required": true
       }
     ]
-  }
+  },
+  "size_bytes": 40381028
 }
