@@ -1,10 +1,10 @@
 {
-  "version": "0.1.0-beta.9",
-  "latest_version": "0.1.0-beta.9",
+  "version": "0.1.0-beta.10",
+  "latest_version": "0.1.0-beta.10",
   "channel": "beta",
-  "installer_url": "https://github.com/kuroko-cast/KurokoCast-updates/releases/download/v0.1.0-beta.9/KurokoCast.0.1.0-beta.9.exe",
-  "sha256": "65D7AE94F9A79DEFEB6CE70B0884F0F29725F4612EC195BFA4F603C653EB535F",
-  "release_notes": "v0.1.0-beta.9\n・Google / Chrome Web Speech API Bridge direct版を追加\n・デスクトップ音声 / マイク音声のGoogle字幕に対応\n・AI-DLC導入は初回起動後にアプリ内で確認してから開始\n・AI-DLC導入中に進捗バー付き画面を表示\n・音声字幕 / OCR翻訳画面のAI-DLC導入導線を共通化\n・インストーラー注意文にGoogle認識利用時の第三者音声と外部送信可能性の説明を追加\n・AI-DLC本体はinstallerに同梱しない\n・AI-DLCは約6GBのダウンロードが発生するため通信環境によって時間がかかります",
+  "installer_url": "https://github.com/kuroko-cast/KurokoCast-updates/releases/download/v0.1.0-beta.10/KurokoCast-0.1.0-beta.10-fix.1.exe",
+  "sha256": "01E46186D2AA16D7F93A0E53A53080294020AB65D9D503C36BC2C1F5DB803D84",
+  "release_notes": "v0.1.0-beta.10\n・マイク音声とデスクトップ音声を同時に字幕翻訳できない問題を修正しました。\n・マイク音声とデスクトップ音声を同時に使用した場合の字幕・翻訳処理を改善しました。\n・AI-DLC初回導入案内の説明を追加しました。\n・AI-DLCは約6GBで、ゲームの追加データ並みの容量があることを明記しました。\n・Wi-Fi環境での導入をおすすめする説明を追加しました。\n・Googleでの文字起こし・翻訳のみを使用する場合は、AI-DLCのダウンロードが不要であることを明記しました。\n・AI-DLCが必要な機能として、ローカル字幕・翻訳、OCR翻訳を明記しました。\n・「あとで」を選択した後、次回起動時にAI-DLC初回導入案内が再表示される問題を修正しました。\n・音声字幕 / OCR翻訳画面のAI-DLC導入導線は引き続き利用できます。\n・インストーラー注意文に、Google認識利用時の第三者音声と外部送信可能性に関する説明を追加済みです。",
   "required": false,
   "ai_runtime": {
     "runtime_id": "kurokocast-ai-runtime",
