@@ -3,8 +3,8 @@
   "latest_version": "0.1.0-beta.9",
   "channel": "beta",
   "installer_url": "https://github.com/kuroko-cast/KurokoCast-updates/releases/download/v0.1.0-beta.9/KurokoCast.0.1.0-beta.9.exe",
-  "sha256": "189B1DAE4FDC24D6B114DBDAABA052D615985FDD26336118E94FB551B3FC2487",
-  "release_notes": "v0.1.0-beta.9\n・Google / Chrome Web Speech API Bridge direct版を追加\n・Chrome側「字幕開始」1ボタン導線を追加\n・デスクトップ音声 / マイク音声のGoogle字幕に対応\n・対応環境ではブラウザ側翻訳を優先し、未対応時はKurokoCast側翻訳へ切り替え\n・Google認識方式の設定UIを整理\n・Browser Bridge通常UIを簡略化\n・サポートZIPにGoogle Bridge診断情報を追加\n・Google認識言語のルーティングを修正\n・Core installerをAI-DLC非同梱の軽量構成へ整理\n・AI-DLC multi-asset導線と軽量status checkを改善",
+  "sha256": "65D7AE94F9A79DEFEB6CE70B0884F0F29725F4612EC195BFA4F603C653EB535F",
+  "release_notes": "v0.1.0-beta.9\n・Google / Chrome Web Speech API Bridge direct版を追加\n・デスクトップ音声 / マイク音声のGoogle字幕に対応\n・AI-DLC導入は初回起動後にアプリ内で確認してから開始\n・AI-DLC導入中に進捗バー付き画面を表示\n・音声字幕 / OCR翻訳画面のAI-DLC導入導線を共通化\n・インストーラー注意文にGoogle認識利用時の第三者音声と外部送信可能性の説明を追加\n・AI-DLC本体はinstallerに同梱しない\n・AI-DLCは約6GBのダウンロードが発生するため通信環境によって時間がかかります",
   "required": false,
   "ai_runtime": {
     "runtime_id": "kurokocast-ai-runtime",
