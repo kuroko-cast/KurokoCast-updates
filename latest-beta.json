@@ -1,10 +1,10 @@
 {
-  "version": "0.1.0-beta.13",
-  "latest_version": "0.1.0-beta.13",
+  "version": "0.1.0-beta.14",
+  "latest_version": "0.1.0-beta.14",
   "channel": "beta",
-  "installer_url": "https://github.com/kuroko-cast/KurokoCast-updates/releases/download/v0.1.0-beta.13/KurokoCast.0.1.0-beta.13.exe",
-  "sha256": "DEDBD66C32970DD4A46F9D7C8B08BBCFBE2D7F82F87240819E789B7C6497C637",
-  "release_notes": "# KurokoCast 0.1.0-beta.13\n\n## 主な変更\n\n- beta.12公開後に確認されたAI-DLC導入失敗の診断を強化しました。\n- beta.13 RC実機テストで見つかった metadata_status=app_version_mismatch を修正しました。\n- AI-DLC metadata validationは、top-level app versionではなく ai_runtime.compatible_app_versions を正本にして互換性を判定します。\n- AI-DLCのdownload完了後に extract_failed となるケースを切り分けやすくしました。\n- Windows LongPathsEnabled=0 環境向けに、AI-DLC展開時のstaging pathを短縮しました。\n- AI-DLC展開前にpath length preflightを行い、path length riskをsafeな数値で記録するようにしました。\n- support ZIPに ai_dlc_install_state.json を含め、download後のextract / activate / status_checkの状態を追いやすくしました。\n- support ZIP同梱logsのpath情報、外部参照、認証情報のマスクを強化しました。\n- download済みasset確認後に失敗した場合のUI文言を、safe reasonに応じて改善しました。\n- RC3でLongPathsEnabled=0のノートPCでもAI-DLC導入成功を確認しました。\n\n## 注意事項\n\n- AI-DLC本体はinstallerに同梱していません。\n- installer中にAI-DLC本体のdownload / apply / activateは行いません。\n- AI-DLCは初回起動後、ユーザーがアプリ内で導入を選んだ場合にdownload / apply / activateします。",
+  "installer_url": "https://github.com/kuroko-cast/KurokoCast-updates/releases/download/v0.1.0-beta.14/KurokoCast.0.1.0-beta.14.exe",
+  "sha256": "BFBDA8459FF9C4EDB79E4FF6C2D6277C6C3DA18782D8E9BE411248172DFEF735",
+  "release_notes": "# KurokoCast 0.1.0-beta.14\n\n## 主な変更\n\n- beta.13公開後hotfixとして、Google認識 / 字幕表示時にQt platform plugin errorが出る可能性への対策を追加しました。\n- 字幕ウィンドウ子プロセスのQt plugin path / DLL search pathを補強しました。\n- `qwindows.dll` が存在していても子プロセス側のQt runtime解決に失敗し得るため、Qt runtime path helperを追加しました。\n- 字幕ウィンドウ子プロセスへQt用envを渡すようにしました。\n- 字幕ウィンドウ子プロセスのstdout / stderrをsafeに記録するようにしました。\n- support ZIP作成中に例外が起きても、空ZIPになりにくいfallbackを追加しました。\n- support ZIPにQt runtimeのsafe summaryを追加しました。\n- update flowで破棄済みprogress dialogへcallbackが触れてTclErrorになる問題へのguardを追加しました。\n- beta.14 RC1で、Google認識 / 文字起こし、字幕ウィンドウ、support ZIP作成の実機テスト成功を確認しました。\n- beta.13までのAI-DLC resume download / apply diagnostics / LongPathsEnabled=0対策は維持しています。\n\n## 注意事項\n\n- beta.14はlatest-betaとして公開します。\n- AI-DLC本体はinstallerに同梱していません。\n- installer中にAI-DLC本体をdownload / apply / activateしません。\n- AI-DLCは初回起動後、ユーザーがアプリ内で導入を選んだ場合にdownload / apply / activateします。\n- support ZIP、通常ログ、release notesにはfull local path、URL、token、個人情報、transcript本文、OCR本文、翻訳本文を含めません。",
   "required": false,
   "ai_runtime": {
     "runtime_id": "kurokocast-ai-runtime",
@@ -84,5 +84,5 @@
       }
     ]
   },
-  "size_bytes": 40381028
+  "size_bytes": 45708191
 }
