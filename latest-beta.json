@@ -1,10 +1,10 @@
 {
-  "version": "0.1.0-beta.14",
-  "latest_version": "0.1.0-beta.14",
+  "version": "0.1.0-beta.15",
+  "latest_version": "0.1.0-beta.15",
   "channel": "beta",
-  "installer_url": "https://github.com/kuroko-cast/KurokoCast-updates/releases/download/v0.1.0-beta.14/KurokoCast.0.1.0-beta.14.exe",
-  "sha256": "BFBDA8459FF9C4EDB79E4FF6C2D6277C6C3DA18782D8E9BE411248172DFEF735",
-  "release_notes": "# KurokoCast 0.1.0-beta.14\n\n## 主な変更\n\n- beta.13公開後hotfixとして、Google認識 / 字幕表示時にQt platform plugin errorが出る可能性への対策を追加しました。\n- 字幕ウィンドウ子プロセスのQt plugin path / DLL search pathを補強しました。\n- `qwindows.dll` が存在していても子プロセス側のQt runtime解決に失敗し得るため、Qt runtime path helperを追加しました。\n- 字幕ウィンドウ子プロセスへQt用envを渡すようにしました。\n- 字幕ウィンドウ子プロセスのstdout / stderrをsafeに記録するようにしました。\n- support ZIP作成中に例外が起きても、空ZIPになりにくいfallbackを追加しました。\n- support ZIPにQt runtimeのsafe summaryを追加しました。\n- update flowで破棄済みprogress dialogへcallbackが触れてTclErrorになる問題へのguardを追加しました。\n- beta.14 RC1で、Google認識 / 文字起こし、字幕ウィンドウ、support ZIP作成の実機テスト成功を確認しました。\n- beta.13までのAI-DLC resume download / apply diagnostics / LongPathsEnabled=0対策は維持しています。\n\n## 注意事項\n\n- beta.14はlatest-betaとして公開します。\n- AI-DLC本体はinstallerに同梱していません。\n- installer中にAI-DLC本体をdownload / apply / activateしません。\n- AI-DLCは初回起動後、ユーザーがアプリ内で導入を選んだ場合にdownload / apply / activateします。\n- support ZIP、通常ログ、release notesにはfull local path、URL、token、個人情報、transcript本文、OCR本文、翻訳本文を含めません。",
+  "installer_url": "https://github.com/kuroko-cast/KurokoCast-updates/releases/download/v0.1.0-beta.15/KurokoCast.0.1.0-beta.15.exe",
+  "sha256": "49C2992E3E14AB880B34DA67DD7C848C84C820B9120EC8FC6167A6B321AE550E",
+  "release_notes": "# KurokoCast 0.1.0-beta.15\n\n## Highlights\n\n- Restores Google microphone recognition after long idle periods with a safe watchdog restart.\n- Includes beta.15 validation fixes for OCR UI capture, OCR runtime imports, reading order, and OCR translation handling.\n- Includes local ASR/OCR diagnostic and support ZIP performance improvements.\n\n## Notes\n\n- This beta does not bundle AI-DLC runtime assets in the installer.\n- The AI-DLC metadata block is unchanged from the previous beta metadata.\n- Diagnostics and support output avoid transcript text, OCR text, translation text, tokens, API keys, URLs, and full local paths.",
   "required": false,
   "ai_runtime": {
     "runtime_id": "kurokocast-ai-runtime",
@@ -84,5 +84,5 @@
       }
     ]
   },
-  "size_bytes": 45708191
+  "size_bytes": 56234196
 }
