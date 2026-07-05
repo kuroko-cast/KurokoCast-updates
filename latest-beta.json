@@ -1,6 +1,6 @@
 {
-  "version": "0.1.0-beta.15",
-  "latest_version": "0.1.0-beta.15",
+  "version": "0.1.0-beta.14",
+  "latest_version": "0.1.0-beta.14",
   "channel": "beta",
   "installer_url": "https://github.com/kuroko-cast/KurokoCast-updates/releases/download/v0.1.0-beta.15/KurokoCast.0.1.0-beta.15.exe",
   "sha256": "49C2992E3E14AB880B34DA67DD7C848C84C820B9120EC8FC6167A6B321AE550E",
