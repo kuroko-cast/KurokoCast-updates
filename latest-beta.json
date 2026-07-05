@@ -4,7 +4,7 @@
   "channel": "beta",
   "installer_url": "https://github.com/kuroko-cast/KurokoCast-updates/releases/download/v0.1.0-beta.15/KurokoCast.0.1.0-beta.15.exe",
   "sha256": "49C2992E3E14AB880B34DA67DD7C848C84C820B9120EC8FC6167A6B321AE550E",
-  "release_notes": "# KurokoCast 0.1.0-beta.15\n\n## Highlights\n\n- Restores Google microphone recognition after long idle periods with a safe watchdog restart.\n- Includes beta.15 validation fixes for OCR UI capture, OCR runtime imports, reading order, and OCR translation handling.\n- Includes local ASR/OCR diagnostic and support ZIP performance improvements.\n\n## AI-DLC\n\n- The beta metadata now points to AI-DLC 0.1.0-ai.2, matching the runtime used during the successful beta.15 packaged and OCR validation.\n- The Core installer does not bundle AI-DLC runtime assets.\n\n## Notes\n\n- Diagnostics and support output avoid transcript text, OCR text, translation text, tokens, API keys, URLs, and full local paths.",
+  "release_notes": "# KurokoCast 0.1.0-beta.15\n\n## 主な変更\n\n- Googleマイク認識が長時間待機後に止まる場合があったため、安全なwatchdog再起動処理を追加しました。\n- OCR範囲選択後のプレビュー表示、OCR runtime import、OCR読み取り順、OCR翻訳失敗時の表示処理を修正しました。\n- ローカルASR / OCR診断とサポートZIP作成処理を改善しました。\n- サポートZIP作成時の速度と安定性を改善しました。\n- beta.15 packaged環境で、Google認識、ローカルASR、OCR、翻訳、AI-DLC 0.1.0-ai.2 の動作確認を行いました。\n\n## AI-DLC\n\n- beta.15の配布情報は、検証済みの AI-DLC 0.1.0-ai.2 を参照します。\n- Core installerにはAI-DLC本体は同梱していません。\n- AI-DLCは、初回起動後にアプリ内から導入できます。\n\n## 注意事項\n\n- 診断情報、通常ログ、サポートZIPには、音声本文、OCR本文、翻訳本文、token、API key、URL、full local pathを含めない方針です。\n- AI-DLC 0.1.0-ai.1 は削除していません。必要な場合に備えて旧releaseとして残しています。",
   "required": false,
   "ai_runtime": {
     "runtime_id": "kurokocast-ai-runtime",
