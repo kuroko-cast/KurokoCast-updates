@@ -1,10 +1,10 @@
 {
-  "version": "0.1.0-beta.15",
-  "latest_version": "0.1.0-beta.15",
+  "version": "0.1.0-beta.16",
+  "latest_version": "0.1.0-beta.16",
   "channel": "beta",
-  "installer_url": "https://github.com/kuroko-cast/KurokoCast-updates/releases/download/v0.1.0-beta.15/KurokoCast.0.1.0-beta.15.exe",
-  "sha256": "C3390FF6B9E73E89B32693788C6A50782ABCD24E537E190A5B9C4F6E1249AEF6",
-  "release_notes": "# KurokoCast 0.1.0-beta.15\n\n## 主な変更\n\n- AI-DLC未導入時に、ホーム画面へ導入カードが表示されない場合があった問題を修正しました。\n- AI-DLCの導入ボタンを押しても、すぐに失敗してしまう問題を修正しました。\n- 壊れたAI-DLCや途中まで入ったAI-DLCを、正常導入済みと誤判定しないように修正しました。\n- AI-DLCの状態確認・診断機能を強化しました。\n- Googleマイク認識が長時間待機後に止まる場合があったため、安全なwatchdog再起動処理を追加しました。\n- OCR範囲選択後のプレビュー表示、OCR runtime import、OCR読み取り順、OCR翻訳失敗時の表示処理を修正しました。\n- ローカルASR / OCR診断とサポートZIP作成処理を改善しました。\n- beta.15 packaged環境で、Google認識、ローカルASR、OCR、翻訳、AI-DLC 0.1.0-ai.2 の動作確認を行いました。\n\n## AI-DLC\n\n- beta.15の配布情報は、検証済みの AI-DLC 0.1.0-ai.2 を参照します。\n- Core installerにはAI-DLC本体は同梱していません。\n- AI-DLCは、初回起動後にアプリ内から導入できます。\n\n## 注意事項\n\n- 診断情報、通常ログ、サポートZIPには、音声本文、OCR本文、翻訳本文、token、API key、URL、full local pathを含めない方針です。\n- AI-DLC 0.1.0-ai.1 は削除していません。必要な場合に備えて旧releaseとして残しています。",
+  "installer_url": "https://github.com/kuroko-cast/KurokoCast-updates/releases/download/v0.1.0-beta.16/KurokoCast.0.1.0-beta.16.exe",
+  "sha256": "CD4C4951AE9D4BB7F370BF01EF9301B8FF7B30D65F588E646CB899D7EEC9A047",
+  "release_notes": "# KurokoCast 0.1.0-beta.16\n\n## 主な変更\n\n- 音声字幕を開く時の初期化処理を調整し、画面表示前に重くなりにくいよう改善しました。\n- AI-DLC status check / import path activation の重複を抑え、起動時のログ出力を減らしました。\n- 日本語デバイス名などを含む起動ログで `--- Logging error ---` が出る場合があった問題を抑制しました。\n- AI-DLC導入カードがホーム画面に表示された時、下段のランチャーカードが見えなくなる問題に対応し、ホーム画面のカード部分をスクロール可能にしました。\n- 今後の追加機能DLCに向けた内部基盤を追加しました。\n  - DLC manifest / index / installed registry\n  - DLC status composer\n  - DLC path service\n  - launcher view model\n- この時点では、Feature DLCのインストール / 更新 / 起動 / 詳細画面 / クラウド権限確認はまだ未実装です。\n\n## AI-DLC\n\n- beta.16の配布情報は、引き続き検証済みの AI-DLC 0.1.0-ai.2 を参照します。\n- Core installerにはAI-DLC本体は同梱していません。\n- AI-DLCは、初回起動後にアプリ内から導入できます。\n\n## 注意事項\n\n- 診断情報、通常ログ、サポートZIPには、音声本文、OCR本文、翻訳本文、token、API key、URL、full local pathを含めない方針です。\n- このbeta.16は、音声字幕起動の重さとログ出力過多を抑えるためのhotfixを含みます。\n",
   "required": false,
   "ai_runtime": {
     "runtime_id": "kurokocast-ai-runtime",
@@ -84,5 +84,5 @@
       }
     ]
   },
-  "size_bytes": 56235796
+  "size_bytes": 56259601
 }
