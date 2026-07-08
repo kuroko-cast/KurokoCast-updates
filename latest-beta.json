@@ -1,10 +1,10 @@
 {
-    "version":  "0.1.0-beta.18",
-    "latest_version":  "0.1.0-beta.18",
+    "version":  "0.1.0-beta.19",
+    "latest_version":  "0.1.0-beta.19",
     "channel":  "beta",
-    "installer_url":  "https://github.com/kuroko-cast/KurokoCast-updates/releases/download/v0.1.0-beta.18/KurokoCast.0.1.0-beta.18.exe",
-    "sha256":  "0125882FA3E91557817764BB3CAA1F81F3EC2A3872BEB40381E13DD8492AD9F6",
-    "release_notes":  "# KurokoCast 0.1.0-beta.18\n\n## 主な変更\n- Googleマイク字幕で、KurokoCast側で選択したマイクをBrowser Speech Bridge経由でGoogle認識へ渡すようにしました。\n- Googleマイク字幕がChromeの既定マイクやWindowsの既定入力に引っ張られにくくなりました。\n- ボイスチェンジャーやNVIDIA Broadcastなどを使う場合も、KurokoCast側で選択した入力がそのままGoogle認識へ送られるようにしました。\n- Browser Speech Bridgeのaudio adapter / ticket / queue / pump をデスクトップ音声とマイク音声の両方に対応しました。\n- マイク音声capture restart時にも、Google認識が自動復帰しやすくなるようにしました。\n- Google字幕ブラウザ画面に「デスクトップ音声」「マイク音声」の表示を追加し、どちらの字幕画面か分かりやすくしました。\n- beta.17で入れたGoogle字幕の長時間安定化修正は維持しています。\n\n## AI-DLC\n- AI-DLC metadata は 0.1.0-ai.2 のまま維持しています。\n- Core installerにはAI-DLC本体を同梱していません。\n\n## 注意事項\n- Google認識はChromeのWeb Speech APIを使う実験機能です。\n- Google Cloud Speech-to-Text APIではありません。\n- 音声がブラウザまたは外部サービスへ送信される場合があります。",
+    "installer_url":  "https://github.com/kuroko-cast/KurokoCast-updates/releases/download/v0.1.0-beta.19/KurokoCast.0.1.0-beta.19.exe",
+    "sha256":  "4EB1C55EFBA3B11409BFC4AD7A03D996B7A875B8B230494FCD30DB1A7B0E3E15",
+    "release_notes":  "# KurokoCast 0.1.0-beta.19\n\n## 主な変更\n- Googleマイク字幕のBridge監視を、デスクトップ音声と同じaudio-flow watchdog構成へ整理しました。\n- マイク音声でも、Browser Bridgeの音声フレームが流れているのにGoogle認識結果が返らない場合、自動復帰しやすくなりました。\n- Googleマイク字幕で `webAudioAcceptedCount` / audio-flow / result idle を監視するようにしました。\n- `microphone_bridge_audio_flow_no_result` / `microphone_bridge_idle_no_result` など、マイクBridge向けのsafe diagnosticsを追加しました。\n- standaloneのChrome直接マイク経路と、KurokoCast起動のmicrophone bridge経路を分離しました。\n- マイクソース設定の入力デバイス付近に、NVIDIA Broadcast / ノイズ抑制 / ボイスチェンジャー経由では字幕精度が落ちる可能性がある注意書きを追加しました。\n- 注意書きは入力デバイス選択欄より上に表示するよう調整しました。\n- beta.18で入れた「KurokoCastで選択したマイクをGoogle認識へ渡す修正」と、Google字幕ブラウザUIのデスクトップ音声 / マイク音声表示は維持しています。\n\n## AI-DLC\n- AI-DLC metadata は 0.1.0-ai.2 のまま維持しています。\n- Core installerにはAI-DLC本体を同梱していません。\n\n## 注意事項\n- Google認識はChromeのWeb Speech APIを使う実験機能です。\n- Google Cloud Speech-to-Text APIではありません。\n- 音声がブラウザまたは外部サービスへ送信される場合があります。\n- NVIDIA Broadcastなどのノイズ抑制・ボイスチェンジャー経由のマイクを使うと、字幕精度が落ちる場合があります。",
     "required":  false,
     "ai_runtime":  {
                        "runtime_id":  "kurokocast-ai-runtime",
@@ -84,5 +84,5 @@
                                       }
                                   ]
                    },
-    "size_bytes":  56255332
+    "size_bytes":  56263205
 }
