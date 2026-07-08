@@ -1,10 +1,10 @@
 {
-    "version":  "0.1.0-beta.17",
-    "latest_version":  "0.1.0-beta.17",
+    "version":  "0.1.0-beta.18",
+    "latest_version":  "0.1.0-beta.18",
     "channel":  "beta",
-    "installer_url":  "https://github.com/kuroko-cast/KurokoCast-updates/releases/download/v0.1.0-beta.17/KurokoCast.0.1.0-beta.17.exe",
-    "sha256":  "ECB05DB9B039AC3B40751444C3D8460A74CC1D41C6DA833184E98B4426FDD068",
-    "release_notes":  "# KurokoCast 0.1.0-beta.17\n\n## 主な変更\n\n- Google字幕の長時間安定性を改善しました。\n- マイクGoogle認識で、60秒間結果が返らない場合に安全にrecognition sessionをrefreshします。\n- デスクトップGoogle認識でも、60秒間結果が返らない場合に安全にrecognition sessionをrefreshします。\n- Web Speech recognition sessionの世代管理を追加し、古いsessionからのイベントを無視できるようにしました。\n- デスクトップ音声の無音PCM frameを有音扱いしないようにし、無音中はidle refresh側で扱うようにしました。\n- デスクトップ音声capture watchdog restart後に、Browser Bridge / audioTrack / recognitionが自動復帰するようにしました。\n- Browser Bridge WebSocket close時に、共有desktop captureを不用意に停止しないようにしました。\n- Google字幕復帰まわりのsafe diagnosticsを追加しました。\n\n## AI-DLC\n\n- AI-DLC metadata は 0.1.0-ai.2 のまま維持しています。\n- Core installerにはAI-DLC本体を同梱していません。\n\n## 注意事項\n\n- 診断情報、通常ログ、サポートZIPには、音声本文、OCR本文、翻訳本文、token、API key、URL、full local pathを含めない方針です。",
+    "installer_url":  "https://github.com/kuroko-cast/KurokoCast-updates/releases/download/v0.1.0-beta.18/KurokoCast.0.1.0-beta.18.exe",
+    "sha256":  "0125882FA3E91557817764BB3CAA1F81F3EC2A3872BEB40381E13DD8492AD9F6",
+    "release_notes":  "# KurokoCast 0.1.0-beta.18\n\n## 主な変更\n- Googleマイク字幕で、KurokoCast側で選択したマイクをBrowser Speech Bridge経由でGoogle認識へ渡すようにしました。\n- Googleマイク字幕がChromeの既定マイクやWindowsの既定入力に引っ張られにくくなりました。\n- ボイスチェンジャーやNVIDIA Broadcastなどを使う場合も、KurokoCast側で選択した入力がそのままGoogle認識へ送られるようにしました。\n- Browser Speech Bridgeのaudio adapter / ticket / queue / pump をデスクトップ音声とマイク音声の両方に対応しました。\n- マイク音声capture restart時にも、Google認識が自動復帰しやすくなるようにしました。\n- Google字幕ブラウザ画面に「デスクトップ音声」「マイク音声」の表示を追加し、どちらの字幕画面か分かりやすくしました。\n- beta.17で入れたGoogle字幕の長時間安定化修正は維持しています。\n\n## AI-DLC\n- AI-DLC metadata は 0.1.0-ai.2 のまま維持しています。\n- Core installerにはAI-DLC本体を同梱していません。\n\n## 注意事項\n- Google認識はChromeのWeb Speech APIを使う実験機能です。\n- Google Cloud Speech-to-Text APIではありません。\n- 音声がブラウザまたは外部サービスへ送信される場合があります。",
     "required":  false,
     "ai_runtime":  {
                        "runtime_id":  "kurokocast-ai-runtime",
@@ -84,5 +84,5 @@
                                       }
                                   ]
                    },
-    "size_bytes":  56258406
+    "size_bytes":  56255332
 }
