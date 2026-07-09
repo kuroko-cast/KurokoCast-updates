@@ -35,12 +35,12 @@ Google認識のみを使う場合は、AI-DLCがなくても利用できます�
 以下から最新版をダウンロードできます。
 
 【最新版】  
-[KurokoCast 0.1.0-beta.18 をダウンロード](https://github.com/kuroko-cast/KurokoCast-updates/releases/download/v0.1.0-beta.18/KurokoCast.0.1.0-beta.18.exe)
+[KurokoCast 0.1.0-beta.20 をダウンロード](https://github.com/kuroko-cast/KurokoCast-updates/releases/download/v0.1.0-beta.20/KurokoCast.0.1.0-beta.20.exe)
 
 【過去バージョンはこちら】  
 [バージョン一覧](https://github.com/kuroko-cast/KurokoCast-updates/releases)
 
-ダウンロード後、`KurokoCast.0.1.0-beta.16.exe` を実行してインストールしてください。
+ダウンロード後、`KurokoCast.0.1.0-beta.20.exe` を実行してインストールしてください。
 
 ## 現在の状態
 
