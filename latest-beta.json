@@ -1,10 +1,10 @@
 {
-  "version": "0.1.0-beta.20",
-  "latest_version": "0.1.0-beta.20",
+  "version": "0.1.0-beta.21",
+  "latest_version": "0.1.0-beta.21",
   "channel": "beta",
-  "installer_url": "https://github.com/kuroko-cast/KurokoCast-updates/releases/download/v0.1.0-beta.20/KurokoCast.0.1.0-beta.20.exe",
-  "sha256": "7B7E886C09B1D852B1F085F1E878D0A78AADB1642FD0BB4BCEB55AC6CA6C0473",
-  "release_notes": "# KurokoCast 0.1.0-beta.20\n\n## 重要なお知らせ\n\n- beta.19 は取り下げ済みです。beta.20 が beta.19 の代わりとなる修正版です。\n- beta.19 は再利用せず、欠番扱いにします。\n\n## 主な修正\n\n- 音声字幕画面を開いただけでは、マイク / デスクトップ音声の取得を開始しないようにしました。\n- ユーザーが字幕開始を明示した後だけ、音声取得と認識処理を開始するようにしました。\n- 前回、音声字幕画面または音声取得の開始中に異常終了した可能性がある場合に備え、安全モード判定用のクラッシュ marker を追加しました。\n- config.local.json の保存を atomic save に変更し、last-good backup から復旧できるようにしました。\n- マイク候補を整理し、誤選択しやすい仮想 / 内部 / 低レベル入力を通常表示から除外しました。\n- デスクトップ音声 loopback の restart storm を抑制しました。\n- support ZIP の軽量診断で native GPU probe を避けるようにしました。\n\n## AI-DLC\n\n- AI-DLC metadata は引き続き 0.1.0-ai.2 を参照します。\n- Core installer には AI-DLC 本体を同梱していません。\n- AI-DLC 仕様および asset 情報は変更していません。\n\n## 未実装 / 変更なし\n\n- Feature DLC の download / install / update / launch は未実装のままです。\n- Cloud Entitlement / 課金判定の実通信はありません。\n",
+  "installer_url": "https://github.com/kuroko-cast/KurokoCast-updates/releases/download/v0.1.0-beta.21/KurokoCast.0.1.0-beta.21.exe",
+  "sha256": "45A9B1D1DFA8B77EBAB826B20EB7A2C69323529DA8F306F4F2A1C97749FE9779",
+  "release_notes": "# KurokoCast 0.1.0-beta.21\n\n## 主な追加・改善\n\n- Chromeのブラウザ音声認識を利用したGoogle字幕・翻訳を追加しました。\n- デスクトップ音声とマイク音声のGoogle字幕を同時に利用できます。\n- 認識セッションの切り替えを安定化し、停止時は待機中の認識へ切り替え、必要に応じて単一認識へ安全に復帰します。\n- 音声キャプチャの停止、古いcallback、再接続時の安全対策と診断を強化しました。\n- support ZIPに、本文を含まない認識状態の診断情報を追加しました。\n- OCR、AI-DLC、更新経路、配布前検証の安全性を見直しました。\n\n## 注意事項\n\n- Google字幕はChrome / Google側の挙動やネットワーク状態の影響を受けます。\n- デスクトップ音声はBGM、効果音、雑音の影響で、Google側の発話終了判定が遅れる場合があります。\n- interim字幕は発話中にリアルタイムで更新されます。\n- このバージョンはbeta版です。不具合報告時にsupport ZIPの提供をお願いする場合があります。\n\n## 既知事項\n\n- 雑音の多いデスクトップ音声では、Google側の発話区切りによりinterim字幕が長く残る場合があります。\n- これは認識切り替えの安定化とは別に、Google側の発話終了判定に依存する課題です。\n\n## AI-DLC\n\n- AI-DLC metadataは引き続き`0.1.0-ai.2`を参照します。\n- Core installerにはAI-DLC本体を同梱していません。",
   "required": false,
   "ai_runtime": {
     "runtime_id": "kurokocast-ai-runtime",
@@ -84,5 +84,5 @@
       }
     ]
   },
-  "size_bytes": 56353846
+  "size_bytes": 56558367
 }
