@@ -4,7 +4,7 @@
     "channel":  "beta",
     "installer_url":  "https://github.com/kuroko-cast/KurokoCast-updates/releases/download/v0.1.0-beta.22/KurokoCast.0.1.0-beta.22.exe",
     "sha256":  "7DB7007868236ED4F96BEC27EC8013B6EA6EAC8A1E0F56C1430D8E711E3D9DE0",
-    "release_notes":  "# KurokoCast 0.1.0-beta.22\n\n## 主な追加・改善\n\n- Google字幕を字幕ちゃん型JIT handoffへ変更しました。\n- 通常時はrecognizer 1本、切替時だけ次を先行起動します。\n- 確定直後や大人数の連続発話で字幕が止まる問題を改善しました。\n- Bridge、WebSocket、AudioContext、認識の自動復旧を強化しました。\n- 通常ログを削減し、障害調査用DEBUGログは維持しています。\n\n## 注意事項\n\n- Google字幕はChrome / Google側の挙動やネットワーク状態の影響を受けます。\n- デスクトップ音声はBGM、効果音、雑音の影響で、Google側の発話終了判定が遅れる場合があります。\n- interim字幕は発話中にリアルタイムで更新されます。\n- このバージョンはbeta版です。不具合報告時にsupport ZIPの提供をお願いする場合があります。\n\n## 既知事項\n\n- 雑音の多いデスクトップ音声では、Google側の発話区切りによりinterim字幕が長く残る場合があります。\n- これは認識切り替えの安定化とは別に、Google側の発話終了判定に依存する課題です。\n\n## AI-DLC\n\n- AI-DLC metadataは引き続き`0.1.0-ai.2`を参照します。\n- Core installerにはAI-DLC本体を同梱していません。",
+    "release_notes":  "# KurokoCast 0.1.0-beta.22\n\n## 主な追加・改善\n\n- Google字幕を、認識確定時に次の認識処理を先行起動する方式へ改善しました。\n- 通常時はrecognizer 1本で動作し、切替時だけ次の認識処理を先行起動します。\n- 確定直後や大人数の連続発話で字幕が止まりにくくなるよう改善しました。\n- 認識セッション切替時の字幕欠落と停止を軽減しました。\n- Bridge、WebSocket、AudioContext、認識の自動復旧を強化しました。\n- 通常ログを削減し、障害調査用DEBUGログは維持しています。\n\n## 注意事項\n\n- Google字幕はChrome / Google側の挙動やネットワーク状態の影響を受けます。\n- デスクトップ音声はBGM、効果音、雑音の影響で、Google側の発話終了判定が遅れる場合があります。\n- interim字幕は発話中にリアルタイムで更新されます。\n- このバージョンはbeta版です。不具合報告時にsupport ZIPの提供をお願いする場合があります。\n\n## 既知事項\n\n- 雑音の多いデスクトップ音声では、Google側の発話区切りによりinterim字幕が長く残る場合があります。\n- これは認識切り替えの安定化とは別に、Google側の発話終了判定に依存する課題です。\n\n## AI-DLC\n\n- AI-DLC metadataは引き続き`0.1.0-ai.2`を参照します。\n- Core installerにはAI-DLC本体を同梱していません。",
     "required":  false,
     "ai_runtime":  {
                        "runtime_id":  "kurokocast-ai-runtime",
