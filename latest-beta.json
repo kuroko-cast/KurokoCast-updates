@@ -1,12 +1,12 @@
 {
-    "version":  "0.1.0-beta.23",
-    "latest_version":  "0.1.0-beta.23",
+    "version":  "0.1.0-beta.24",
+    "latest_version":  "0.1.0-beta.24",
     "channel":  "beta",
-    "installer_url":  "https://github.com/kuroko-cast/KurokoCast-updates/releases/download/v0.1.0-beta.23/KurokoCast.0.1.0-beta.23.exe",
-    "sha256":  "2137257F34A882F13211644072DC41415AEAEF098DEA75A1A3AA68B3DAF38B42",
-    "release_notes":  "# KurokoCast 0.1.0-beta.23\n\n## 主な追加・改善\n\n- アプリ指定音声に対応し、現在開いているアプリから取得対象を選択できるようになりました。\n- アプリ指定音声の設定画面を開いた際、候補一覧を自動更新するよう改善しました。\n- マイク音声と相手側音声を区別する話者名表示を追加しました。\n- 個別字幕、統合字幕、字幕結合画面の表示と操作性を改善しました。\n- 字幕のフォント、文字色、縁取り、背景、透明度、最前面表示などのデザイン設定を拡張しました。\n- 字幕用フォント6書体を同梱しました。\n- 多言語の保護ワード・NGワード処理を改善しました。\n- 音声字幕の設定画面、スクロール、字幕更新処理を軽量化しました。\n- live interim字幕のUI更新を整理し、final字幕や翻訳字幕を欠落させず負荷を抑えるよう改善しました。\n- Google字幕の認識停止・音声停止時の復旧処理を強化しました。\n- 通常ログをINFO / WARNING / ERROR中心に整理し、DEBUGログは明示的に有効化した場合だけ表示するよう変更しました。\n- 同一警告や高頻度ログの繰り返しを抑制しました。\n- installer生成処理とInno Setup検出の安定性を改善しました。\n\n## 注意事項\n\n- Google字幕はChrome、Google側の挙動、ネットワーク状態の影響を受けます。\n- アプリ指定音声は、対象アプリや音声出力方式によって取得できない場合があります。\n- このバージョンはbeta版です。不具合報告時にsupport ZIPの提供をお願いする場合があります。\n\n## ログとプライバシー\n\n- 通常ログでは字幕本文、翻訳本文、OCR本文、raw audio、token等を出力しません。\n- 詳細ログは設定から明示的に有効化した場合のみ使用します。\n\n## AI-DLC\n\n- AI-DLC metadataは引き続き0.1.0-ai.2を参照します。\n- Core installerにはAI-DLC本体を同梱していません。",
+    "installer_url":  "https://github.com/kuroko-cast/KurokoCast-updates/releases/download/v0.1.0-beta.24/KurokoCast.0.1.0-beta.24.exe",
+    "sha256":  "5C2230E69F9E7A2386C56C1D17BA7A4EFDF19CFA180C8EA33DF2929773F16437",
+    "release_notes":  "# KurokoCast 0.1.0-beta.24\n\n## 主な修正・改善\n- 字幕結合で音声ごとの保持秒数が正しく反映されるよう修正しました。\n- 字幕デザイン変更時に音声取得や文字起こしが不要に再起動し、字幕が止まる問題を修正しました。\n- 個別字幕、字幕統合、字幕結合の共通経路へ停止対策を反映しました。\n- 字幕ウィンドウ設定の配置と文言を整理しました。\n- 保持秒数の入力範囲を1～120秒に統一しました。\n\n## 字幕結合\n- 各音声の最新字幕を1件ずつ表示します。\n- 字幕表示方式と表示行数は使用しません。\n- 保持秒数と1行文字数は音声ごとに設定できます。\n\n## AI-DLC\n- AI-DLCは引き続き0.1.0-ai.2です。\n- Core installerにはAI-DLC本体を同梱していません。",
     "required":  false,
-    "ai_runtime":  {
+  "ai_runtime": {
                        "runtime_id":  "kurokocast-ai-runtime",
                        "runtime_version":  "0.1.0-ai.2",
                        "compatible_app_versions":  "\u003e=0.1.0-beta.8,\u003c0.2.0",
@@ -84,5 +84,5 @@
                                       }
                                   ]
                    },
-    "size_bytes":  98275344
+  "size_bytes": 98300151
 }
