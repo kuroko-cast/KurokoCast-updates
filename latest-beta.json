@@ -15,10 +15,10 @@
                                       {
                                           "asset_id":  "base-runtime",
                                           "pack_id":  "base-runtime",
-                                          "asset_name":  "KurokoCast-AI-DLC-base-runtime-0.1.0-ai.2.zip",
-                                          "url":  "https://github.com/kuroko-cast/KurokoCast-updates/releases/download/ai-dlc-v0.1.0-ai.2/KurokoCast-AI-DLC-base-runtime-0.1.0-ai.2.zip",
-                                          "sha256":  "fe52b90889f74d5f55b5e406f12f4cac61ba670f9476cecfba0c01ce24a67909",
-                                          "size_bytes":  290613608,
+                                          "asset_name":  "KurokoCast-AI-DLC-base-runtime-common-pack-0.1.0-ai.2.zip",
+                                          "url":  "https://github.com/kuroko-cast/KurokoCast-updates/releases/download/ai-dlc-v0.1.0-ai.2/KurokoCast-AI-DLC-base-runtime-common-pack-0.1.0-ai.2.zip",
+                                          "sha256":  "065adc84828a7410dd1a531a148b01484973ffa855ca057a99e4ed69b5c41d9e",
+                                          "size_bytes":  290614460,
                                           "install_order":  10,
                                           "required":  true
                                       },
@@ -84,5 +84,21 @@
                                       }
                                   ]
                    },
+    "local_speech_pack":  {
+                              "pack_id":  "kurokocast-local-speech",
+                              "pack_version":  "0.1.0-ai.2",
+                              "compatible_core_versions":  ">=0.1.0-beta.8,<0.2.0",
+                              "capabilities":  [
+                                                   "local_asr"
+                                               ],
+                              "licenses":  [
+                                               {
+                                                   "path":  "licenses/python/faster-whisper/LICENSE",
+                                                   "sha256":  "af6798135e729f8aa6c853936d037dfdea449734d26b8ea6a89805fca758c0d5",
+                                                   "size":  1064,
+                                                   "license_id":  "MIT"
+                                               }
+                                           ]
+                          },
   "size_bytes": 98300151
 }
